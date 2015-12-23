@@ -1,100 +1,99 @@
-1-----Робота з бренчами----------------------------------------------------------------------
+п»ї1-----Р РѕР±РѕС‚Р° Р· Р±СЂРµРЅС‡Р°РјРё----------------------------------------------------------------------
 
-git branch architecture - створив бренч architecture
-git checkout architecture - переключився в бренчу architecture
-echo wazzup  > index.html - створив файл index.html
-mkdir assets - створив папку assets
-mkdir uploads - створив папку uploads
-git add -A  - застейджив зміни для коміту
-git commit -m "Adding directories and index.html" - закомітив все
-echo   >assets/all.js - створив all.js файл в папці assets
-echo   >assets/css.js -створив css.js файл в папці assets
-git add -A  - застейджив зміни для коміту
-git commit -m "add jsfiles into assets" - закомітив все
-echo  >uploads/letmein.txt - створюю файл в uploads щоб залити папку
-git add -A  - застейджив зміни для коміту
-git commit -m "added letmein.txt tp uploads" - закомітив все
-git push origin architecture - запушав в бренч architecture
-echo  >uploads/.gitignore - створив .gitignore в uploads
-git add -A  - застейджив зміни для коміту
-git commit -m"added .gitignore to uploads" - закомітив все
-git push origin architecture - запушав в бренч architecture
-git checkout master - перейшов на бренч master
-git merge architecture - замерджив architecture  з master
-git branch -d architecture - видалив бренч architecture
+git branch architecture - СЃС‚РІРѕСЂРёРІ Р±СЂРµРЅС‡ architecture
+git checkout architecture - РїРµСЂРµРєР»СЋС‡РёРІСЃСЏ РІ Р±СЂРµРЅС‡Сѓ architecture
+echo wazzup  > index.html - СЃС‚РІРѕСЂРёРІ С„Р°Р№Р» index.html
+mkdir assets - СЃС‚РІРѕСЂРёРІ РїР°РїРєСѓ assets
+mkdir uploads - СЃС‚РІРѕСЂРёРІ РїР°РїРєСѓ uploads
+git add -A  - Р·Р°СЃС‚РµР№РґР¶РёРІ Р·РјС–РЅРё РґР»СЏ РєРѕРјС–С‚Сѓ
+git commit -m "Adding directories and index.html" - Р·Р°РєРѕРјС–С‚РёРІ РІСЃРµ
+echo   >assets/all.js - СЃС‚РІРѕСЂРёРІ all.js С„Р°Р№Р» РІ РїР°РїС†С– assets
+echo   >assets/css.js -СЃС‚РІРѕСЂРёРІ css.js С„Р°Р№Р» РІ РїР°РїС†С– assets
+git add -A  - Р·Р°СЃС‚РµР№РґР¶РёРІ Р·РјС–РЅРё РґР»СЏ РєРѕРјС–С‚Сѓ
+git commit -m "add jsfiles into assets" - Р·Р°РєРѕРјС–С‚РёРІ РІСЃРµ
+echo  >uploads/letmein.txt - СЃС‚РІРѕСЂСЋСЋ С„Р°Р№Р» РІ uploads С‰РѕР± Р·Р°Р»РёС‚Рё РїР°РїРєСѓ
+git add -A  - Р·Р°СЃС‚РµР№РґР¶РёРІ Р·РјС–РЅРё РґР»СЏ РєРѕРјС–С‚Сѓ
+git commit -m "added letmein.txt tp uploads" - Р·Р°РєРѕРјС–С‚РёРІ РІСЃРµ
+git push origin architecture - Р·Р°РїСѓС€Р°РІ РІ Р±СЂРµРЅС‡ architecture
+echo  >uploads/.gitignore - СЃС‚РІРѕСЂРёРІ .gitignore РІ uploads
+git add -A  - Р·Р°СЃС‚РµР№РґР¶РёРІ Р·РјС–РЅРё РґР»СЏ РєРѕРјС–С‚Сѓ
+git commit -m"added .gitignore to uploads" - Р·Р°РєРѕРјС–С‚РёРІ РІСЃРµ
+git push origin architecture - Р·Р°РїСѓС€Р°РІ РІ Р±СЂРµРЅС‡ architecture
+git checkout master - РїРµСЂРµР№С€РѕРІ РЅР° Р±СЂРµРЅС‡ master
+git merge architecture - Р·Р°РјРµСЂРґР¶РёРІ architecture  Р· master
+git branch -d architecture - РІРёРґР°Р»РёРІ Р±СЂРµРЅС‡ architecture
  
 2----Rebase----------------------------------------------------------------------------------------------
 
-git branch subsero - створив новий бренч subzero
-echo  >hohoho.txt - створив файл
-echo  >merrychristmas.txt  - створив файл
-git add -A  - застейджив зміни для коміту
-git commit -m"added hohoho and merrychristmas" - закомітив все
-echo  >happynewyear.txt - створив файл
-git add -A  - застейджив зміни для коміту
-git commit -m"added happynewyear" - закомітив все
-git push origin master - запушав в master
-git checkout subsero - перейшов на бренч subsero
-git rebase master - зробив rebase на master
-echo  >santa.txt - створив файл
-git add -A  - застейджив зміни для коміту
-git commit -m"added santa" - закомітив 
-git checkout master - перейшов на бренч master
-git merge subsero - замерджав subsero в master
-git branch -d subsero - видалив бренч subsero
+git branch subsero - СЃС‚РІРѕСЂРёРІ РЅРѕРІРёР№ Р±СЂРµРЅС‡ subzero
+echo  >hohoho.txt - СЃС‚РІРѕСЂРёРІ С„Р°Р№Р»
+echo  >merrychristmas.txt  - СЃС‚РІРѕСЂРёРІ С„Р°Р№Р»
+git add -A  - Р·Р°СЃС‚РµР№РґР¶РёРІ Р·РјС–РЅРё РґР»СЏ РєРѕРјС–С‚Сѓ
+git commit -m"added hohoho and merrychristmas" - Р·Р°РєРѕРјС–С‚РёРІ РІСЃРµ
+echo  >happynewyear.txt - СЃС‚РІРѕСЂРёРІ С„Р°Р№Р»
+git add -A  - Р·Р°СЃС‚РµР№РґР¶РёРІ Р·РјС–РЅРё РґР»СЏ РєРѕРјС–С‚Сѓ
+git commit -m"added happynewyear" - Р·Р°РєРѕРјС–С‚РёРІ РІСЃРµ
+git push origin master - Р·Р°РїСѓС€Р°РІ РІ master
+git checkout subsero - РїРµСЂРµР№С€РѕРІ РЅР° Р±СЂРµРЅС‡ subsero
+git rebase master - Р·СЂРѕР±РёРІ rebase РЅР° master
+echo  >santa.txt - СЃС‚РІРѕСЂРёРІ С„Р°Р№Р»
+git add -A  - Р·Р°СЃС‚РµР№РґР¶РёРІ Р·РјС–РЅРё РґР»СЏ РєРѕРјС–С‚Сѓ
+git commit -m"added santa" - Р·Р°РєРѕРјС–С‚РёРІ 
+git checkout master - РїРµСЂРµР№С€РѕРІ РЅР° Р±СЂРµРЅС‡ master
+git merge subsero - Р·Р°РјРµСЂРґР¶Р°РІ subsero РІ master
+git branch -d subsero - РІРёРґР°Р»РёРІ Р±СЂРµРЅС‡ subsero
 
 3----Tag-----------------------------------------------------------------------------------------------------
 
-echo  >tagging.txt - створив файл
-git add -A  - застейджив  для коміту
-git commit -m"added tagging" - закомітив 
-echo  >keeptagging.txt - створив файл
-git add -A  - застейджив  для коміту
-git commit -m"added keeptagging" - закомітив 
-git tag v0.1 - створив мітку
-git push origin v0.1 - запушав мітку в репозиторій
+echo  >tagging.txt - СЃС‚РІРѕСЂРёРІ С„Р°Р№Р»
+git add -A  - Р·Р°СЃС‚РµР№РґР¶РёРІ  РґР»СЏ РєРѕРјС–С‚Сѓ
+git commit -m"added tagging" - Р·Р°РєРѕРјС–С‚РёРІ 
+echo  >keeptagging.txt - СЃС‚РІРѕСЂРёРІ С„Р°Р№Р»
+git add -A  - Р·Р°СЃС‚РµР№РґР¶РёРІ  РґР»СЏ РєРѕРјС–С‚Сѓ
+git commit -m"added keeptagging" - Р·Р°РєРѕРјС–С‚РёРІ 
+git tag v0.1 - СЃС‚РІРѕСЂРёРІ РјС–С‚РєСѓ
+git push origin v0.1 - Р·Р°РїСѓС€Р°РІ РјС–С‚РєСѓ РІ СЂРµРїРѕР·РёС‚РѕСЂС–Р№
 
 4----Submodule (advanced level)------------------------------------------------------------------
 
 git submodule add https://github.com/
-	iaroslavvasyliv/JS-basics - створив саб модуль
-git add -A  - застейджив  для коміту
-git commit -m"added submodule js-basic" - закомітив 
-git push origin master - запушав зміни в master
+	iaroslavvasyliv/JS-basics - СЃС‚РІРѕСЂРёРІ СЃР°Р± РјРѕРґСѓР»СЊ
+git add -A  - Р·Р°СЃС‚РµР№РґР¶РёРІ  РґР»СЏ РєРѕРјС–С‚Сѓ
+git commit -m"added submodule js-basic" - Р·Р°РєРѕРјС–С‚РёРІ 
+git push origin master - Р·Р°РїСѓС€Р°РІ Р·РјС–РЅРё РІ master
 
 5---Git Pages (advanced level)----------------------------------------------------------------------
 
-git branch gh-pages - створив бренч gh-pages
-git checkout gh-pages - перейшов на gh-pages
-echo "gh-pages">index.html - створив файл index.html з текстом gh-pages
-git add -A  - застейджив  для коміту
-git commit -m"added index.html" - закомітив 
-git push origin gh-pages - запушав в gh-pages
-http://iaroslavvasyliv.github.io/VCS-CMDline-intro. - все працює !
+git branch gh-pages - СЃС‚РІРѕСЂРёРІ Р±СЂРµРЅС‡ gh-pages
+git checkout gh-pages - РїРµСЂРµР№С€РѕРІ РЅР° gh-pages
+echo "gh-pages">index.html - СЃС‚РІРѕСЂРёРІ С„Р°Р№Р» index.html Р· С‚РµРєСЃС‚РѕРј gh-pages
+git add -A  - Р·Р°СЃС‚РµР№РґР¶РёРІ  РґР»СЏ РєРѕРјС–С‚Сѓ
+git commit -m"added index.html" - Р·Р°РєРѕРјС–С‚РёРІ 
+git push origin gh-pages - Р·Р°РїСѓС€Р°РІ РІ gh-pages
+http://iaroslavvasyliv.github.io/VCS-CMDline-intro. - РІСЃРµ РїСЂР°С†СЋС” !
 
 6---Conflict (advanced level)---------------------------------------------------------------------------
 
-git checkout master - перейшов на бренч master
-echo "finish him">file.txt - cтворив файл
-git add -A  - застейджив  для коміту
-git commit -m"added file.txt" - закомітив все
-git branch wasabi - створив бренчу wasabi
-git checkout wasabi - перейшов на неї
-echo "totaly different content">file.txt - змінив файл
-git add -A  - застейджив  для коміту
-git commit -m"changes in file.txt" - закомітив все
-git checkout master - повернувся в master
-git merge wasabi - замердждив
+git checkout master - РїРµСЂРµР№С€РѕРІ РЅР° Р±СЂРµРЅС‡ master
+echo "finish him">file.txt - cС‚РІРѕСЂРёРІ С„Р°Р№Р»
+git add -A  - Р·Р°СЃС‚РµР№РґР¶РёРІ  РґР»СЏ РєРѕРјС–С‚Сѓ
+git commit -m"added file.txt" - Р·Р°РєРѕРјС–С‚РёРІ РІСЃРµ
+git branch wasabi - СЃС‚РІРѕСЂРёРІ Р±СЂРµРЅС‡Сѓ wasabi
+git checkout wasabi - РїРµСЂРµР№С€РѕРІ РЅР° РЅРµС—
+echo "totaly different content">file.txt - Р·РјС–РЅРёРІ С„Р°Р№Р»
+git add -A  - Р·Р°СЃС‚РµР№РґР¶РёРІ  РґР»СЏ РєРѕРјС–С‚Сѓ
+git commit -m"changes in file.txt" - Р·Р°РєРѕРјС–С‚РёРІ РІСЃРµ
+git checkout master - РїРѕРІРµСЂРЅСѓРІСЃСЏ РІ master
+git merge wasabi - Р·Р°РјРµСЂРґР¶РґРёРІ
 Conflict
-git merge --abort - скасував мердж
-пофіксав конфлікт - замінив текс на totaly different content
-який додавав в branch wasabi
-git add -A  - застейджив  для коміту
-git commit -m "fixing" - закомітив
-git merge wasabi -зробив мердж
-git branch -d wasabi - видалив бренчу
-
-
+git merge --abort - СЃРєР°СЃСѓРІР°РІ РјРµСЂРґР¶
+РїРѕС„С–РєСЃР°РІ РєРѕРЅС„Р»С–РєС‚ - Р·Р°РјС–РЅРёРІ С‚РµРєСЃ РЅР° totaly different content
+СЏРєРёР№ РґРѕРґР°РІР°РІ РІ branch wasabi
+git add -A  - Р·Р°СЃС‚РµР№РґР¶РёРІ  РґР»СЏ РєРѕРјС–С‚Сѓ
+git commit -m "fixing" - Р·Р°РєРѕРјС–С‚РёРІ
+git merge wasabi -Р·СЂРѕР±РёРІ РјРµСЂРґР¶
+git branch -d wasabi - РІРёРґР°Р»РёРІ Р±СЂРµРЅС‡Сѓ
+------------------------------------------------------------------------------------------------------------------------
 
 
 
